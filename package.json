@@ -1,5 +1,5 @@
 {
-  "name": "@yoe/custom-pagination",
+  "name": "yoe-custom-pagination",
   "version": "0.0.1",
   "description": "A customizable pagination component for React",
   "license": "MIT",
