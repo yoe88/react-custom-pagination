@@ -1,5 +1,7 @@
-import CustomPagination from "./CustomPagination";
+import CustomPagination from "./custom-pagination";
 import { useState } from "react";
+
+//import CustomPagination from "yoe-custom-pagination";
 
 function App() {
   const [state, setState] = useState(1);

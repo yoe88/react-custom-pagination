@@ -1,6 +1,6 @@
 {
   "name": "yoe-custom-pagination",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A customizable pagination component for React",
   "license": "MIT",
   "keywords": [
@@ -8,17 +8,17 @@
     "react-pagination"
   ],
   "type": "module",
-  "main": "./dist/custom-pagination.umd.js",
-  "module": "./dist/custom-pagination.es.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/custom-pagination/index.umd.js",
+  "module": "./dist/custom-pagination/index.es.js",
+  "types": "dist/custom-pagination/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/custom-pagination.es.js",
-      "require": "./dist/custom-pagination.umd.js"
+      "import": "./dist/custom-pagination/index.es.js",
+      "require": "./dist/custom-pagination/index.umd.js"
     }
   },
   "files": [
-    "dist"
+    "dist/custom-pagination"
   ],
   "repository": {
     "type": "git",
@@ -30,8 +30,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "add:lib": "npm install -D ./yoe-custom-pagination-0.0.1.tgz",
-    "rm:lib": "npm uninstall @yoe-custom-pagination"
+    "add:lib": "npm install -D ./yoe-custom-pagination-0.0.2.tgz",
+    "rm:lib": "npm uninstall yoe-custom-pagination"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -45,7 +45,6 @@
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "@vitejs/plugin-react": "^4.3.4",
-    "@yoe/custom-pagination": "file:yoe-custom-pagination-0.0.1.tgz",
     "path": "^0.12.7",
     "postcss": "^8.5.2",
     "prettier": "^3.5.1",
@@ -53,6 +52,7 @@
     "tailwindcss": "^4.0.6",
     "typescript": "^5.7.3",
     "vite": "^6.1.0",
-    "vite-plugin-dts": "^4.5.0"
+    "vite-plugin-dts": "^4.5.0",
+    "yoe-custom-pagination": "file:yoe-custom-pagination-0.0.2.tgz"
   }
 }

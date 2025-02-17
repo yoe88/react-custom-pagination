@@ -10,7 +10,6 @@ export default defineConfig({
     react(),
     dts({
       insertTypesEntry: true,
-      rollupTypes: true,
       tsconfigPath: "./tsconfig.app.json",
     }),
     tailwindcss(),
@@ -18,10 +17,11 @@ export default defineConfig({
 
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/CustomPagination.tsx"),
+      entry: path.resolve(__dirname, "src/custom-pagination/index.ts"),
       name: "custom-pagination",
       formats: ["es", "umd"],
-      fileName: (format) => `custom-pagination.${format}.js`,
+      //fileName: (format) => `custom-pagination.${format}.js`,
+      fileName: (format) => `custom-pagination/index.${format}.js`,
     },
     rollupOptions: {
       external: ["react", "react-dom"],
